@@ -28,7 +28,16 @@ body {
     line-height: 80px;
     font-size: 22px;
 }
+/* style of main */
+.main, .main__entrada--block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.main__entrada {
+    margin-top: 20px;
+}
 /* style of entrada de cine */
 .main__entrada--card {
     width: 90%;
@@ -45,12 +54,17 @@ body {
     margin: 20px 0;
 }
 .entrada__card--title {
+    text-align: center;
+    margin-top: 20px;
     font-size: 18px;
 }
 .input {
     width: 80%;
     height: 35px;
     border: 0;
+    font-size: 17px;
+    padding: 0 7px;
+    margin-top: 10px;
     outline: none;
     color: var(--rosadolinght);
     background-color: transparent;
@@ -65,6 +79,7 @@ body {
     height: 40px;
     background-color: transparent;
 }
+
 /* style entrada de streamer */
 .formStream {
     display: flex;
@@ -91,8 +106,29 @@ body {
     background-color: #fcc17c;
     border: 1px solid #fcc17c;
     color: #4c2d8b;
+    font-weight: bold;
 }
 
+/* sytle de boton */
+.btn {
+    display: block;
+    padding: 7px 10px;
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Balsamiq Sans', cursive;
+    border: 2px solid #eba88c;
+    border-radius: 10px;
+    background: linear-gradient(#fb9489, #ffc581);
+    color: var(--rosadolinght);
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid var(--rosadolinght);
+    background: #ffc583;
+    color: #7b2fd5;
+}
 
 /* style of graph comparation */
 .cuadro {
@@ -102,7 +138,7 @@ body {
 }
 .graph {
     width: 300px;
-    height: 300px;
+    height: auto;
     padding: 0 40px 0 0;
     background-color: darkblue;
     border-bottom: 2px solid white;
@@ -146,3 +182,28 @@ p {
     justify-content: flex-end;
 }
 
+/* este es eltilod de las barra span */
+.br {
+    display: flex;
+    flex-direction: column;
+}
+.barra__br--precio {
+    margin: 5px 10px;
+    padding: 7px 4px;
+    background-color: #fec175;
+    color: #4c2d8b;
+    font-weight: bold;
+    border: 2px solid var(--rosadolinght);
+    border-radius: 50%;
+}
+.footer {
+    margin-top: 30px;
+}
+
+@media (min-width: 1000px) {
+    .main {
+        margin: 40px 10%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
