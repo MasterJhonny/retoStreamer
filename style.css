@@ -1,0 +1,148 @@
+:root {
+    --rosadolinght: #fbdaff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Balsamiq Sans', cursive;
+    background: linear-gradient(90deg, #834cef 25%, #8653f0 50%, #9d65fa 100%);
+    color: var(--rosadolinght);
+
+}
+/* style of header */
+.header, .footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.header__title {
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 22px;
+}
+
+/* style of entrada de cine */
+.main__entrada--card {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(199,155,252, 0.5);
+    border-radius: 15px;
+}
+.main__entrada--card form {
+    width: 90%;
+    margin: 20px 0;
+}
+.entrada__card--title {
+    font-size: 18px;
+}
+.input {
+    width: 80%;
+    height: 35px;
+    border: 0;
+    outline: none;
+    color: var(--rosadolinght);
+    background-color: transparent;
+    border-bottom: 2px solid var(--rosadolinght);
+}
+
+::placeholder {
+    color: var(--rosadolinght);
+}
+.salidas {
+    margin-top: 10px; 
+    height: 40px;
+    background-color: transparent;
+}
+/* style entrada de streamer */
+.formStream {
+    display: flex;
+    flex-direction: column;
+}
+.checkbox {
+    display: none;
+}
+
+.formStream label {
+    margin: 5px;
+    cursor: pointer;
+}
+.formStream span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 15px;
+    border: 1px solid var(--rosadolinght);
+    border-radius: 10px 18px;
+    transition: 500ms;
+}
+.checkbox:checked + span{
+    background-color: #fcc17c;
+    border: 1px solid #fcc17c;
+    color: #4c2d8b;
+}
+
+
+/* style of graph comparation */
+.cuadro {
+    width: 320px;
+    padding: 10px;
+    background-color: darkblue;
+}
+.graph {
+    width: 300px;
+    height: 300px;
+    padding: 0 40px 0 0;
+    background-color: darkblue;
+    border-bottom: 2px solid white;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+}
+p {
+    background-color: darkblue;
+    text-align: center;
+}
+.number {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: darkblue;
+    border-left: 2px solid white;
+}
+.number span {
+    text-align: start;
+    padding: 5px;
+}
+.cine {
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: #ECA3F5;
+}
+
+.streamer {
+    display: block;
+    width: 100%;
+    height: 270px;
+    background-color: #F8485E;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+

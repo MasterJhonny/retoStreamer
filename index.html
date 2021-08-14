@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación de Precios</title>
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- link styles -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Comparación de Precios</h1>
+    </header>
+    <main class="main">
+        <section class="main__entrada">
+            <div class="main__entrada--card">
+                <h2 class="entrada__card--title">Cada entrada de Cine: $7</h2>
+                <form action="javascript:void(0)">
+                    <label>
+                        <span>¿Cuantas peliculas quieres ver al mes?</span>
+                        <input type="number" placeholder="Ej. 38"  class="input" id="cantidad" oninput="calularPrecio()">
+                    </label>
+                </form>
+                <p id="salidaC" class="salidas">precio ...</p>
+            </div>
+            <div class="main__entrada--card">
+                <h2 class="entrada__card--title">Suscriptioin mensual de las Plataformas</h2>
+                <form action="javascript:void(0)" class="formStream">
+                    <label for="Netflix">
+                        <input type="checkbox" class="checkbox" name=""id="Netflix">
+                        <span>Netflix $11</span>
+                    </label>
+                    <label for="Amazon">
+                        <input type="checkbox" class="checkbox" id="Amazon">
+                        <span>Amazon Prime Video $12</span>
+                    </label>
+                    <label for="hbo">
+                        <input type="checkbox" class="checkbox" id="hbo">
+                        <span>HBO $13</span>
+                    </label>
+                    <label for="Disney">
+                        <input type="checkbox" class="checkbox" id="Disney">
+                        <span>Disney $10</span>
+                    </label>
+                </form>
+            </div>
+        </section>
+        <section class="main__salida">
+            <div class="cuadro">
+                <div class="graph">
+                    <p class="number"><span>0</span><span>1</span><span>2</span><span>3</span></p>
+                    <p class="barra"><span class="cine">cine</span></p>
+                    <p class="barra"><span class="streamer">Streamer</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
